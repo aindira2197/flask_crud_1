@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students List</title>
+</head>
+<body>
+
+    <h1>Students List</h1>
+
+    <a href="/create">Add Student</a>
+
+    <hr>
+
+    {% for student in students %}
+
+        <h3>{{ student.name }}</h3>
+        <p>Age: {{ student.age }}</p>
+        <p>Created: {{ student.created_at }}</p>
+
+        <hr>
+
+    {% endfor %}
+
+</body>
+</html>
